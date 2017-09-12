@@ -1,0 +1,17 @@
+/* === MAIN.SCSS === */
+
+// => BASE
+@import 'base/resets';
+@import 'base/libraries';
+// => HELPERS
+@import 'helpers/colors';
+@import 'helpers/iconography';
+@import 'helpers/sections';
+// => COMPONENTS
+@import 'components/navbar';
+// => LAYOUTS
+@import 'layouts/header';
+@import 'layouts/footer';
+// => SECTIONS
+// => PAGES
+@import 'pages/home';

@@ -1,0 +1,6 @@
+.container {
+    width: 87.85%;
+    @media screen and(max-width: 960px) {
+        width: 95%;
+    }
+}
