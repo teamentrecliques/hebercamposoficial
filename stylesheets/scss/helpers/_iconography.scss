@@ -1,0 +1,20 @@
+@import '../../../node_modules/font-awesome/scss/font-awesome.scss';
+[data-social-icon=facebook] {
+    @extend .fa;
+    @extend .fa-facebook-square;
+}
+
+[data-social-icon=instagram] {
+    @extend .fa;
+    @extend .fa-instagram;
+}
+
+[data-social-icon=youtube] {
+    @extend .fa;
+    @extend .fa-youtube-play;
+}
+
+.navbar-toggler-icon {
+    @extend .fa;
+    @extend .fa-bars;
+}
