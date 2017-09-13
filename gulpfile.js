@@ -50,7 +50,7 @@ let appScripts = [
     'scripts/js/Routes/*.js',
     'scripts/js/Services/*.js',
     'scripts/js/Values/*.js',
-    'scirpts/js/Values/Mocks/*.js'
+    'scripts/js/Values/Mocks/*.js'
 ];
 
 let myScripts = [
@@ -87,8 +87,8 @@ gulp.task('verifyJs', function() {
 gulp.task('uglifyApp', ['cleanAppJs'], function() {
     return gulp.src(appScripts)
         .pipe(concat('appAll.min.js'))
-        .pipe(uglify({ mangle: false }))
-        .pipe(minify({ ext: '.js', mangle: false }))
+        //.pipe(uglify({ mangle: false }))
+        //.pipe(minify({ ext: '.js', mangle: false }))
         .pipe(gulp.dest('scripts/'));
 });
 
@@ -135,7 +135,7 @@ gulp.task('sass:watch', function() {
 });
 
 gulp.task('app:watch', function() {
-    gulp.watch('scripts/js/**/*.js', ['uglifyApp']);
+    gulp.watch(appScripts, ['uglifyApp']);
 });
 
 gulp.task('build', ['cleanDist', 'sass', 'uglifyApp', 'uglifyLib', 'compressIndex'], function() {
