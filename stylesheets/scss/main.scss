@@ -3,6 +3,7 @@
 // => BASE
 @import 'base/resets';
 @import 'base/libraries';
+@import 'base/typography';
 // => HELPERS
 @import 'helpers/colors';
 @import 'helpers/iconography';
@@ -13,5 +14,8 @@
 @import 'layouts/header';
 @import 'layouts/footer';
 // => SECTIONS
+@import 'sections/Home/about';
+@import 'sections/Home/discography';
+@import 'sections/Home/gallery';
 // => PAGES
 @import 'pages/home';
