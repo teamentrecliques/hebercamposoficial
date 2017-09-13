@@ -1,21 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" ng-app="hebercampos">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="copyright" content="© 2017 Heber Campos">
+    <meta http-equiv="content-script-type" content="text/javascript">
+    <meta http-equiv="content-style-type" content="text/css">
+    <meta name="description" content="{{metas.description}}">
+    <meta name="keywords" content="{{metas.keywords}}">
+    <meta name="author" content="Entrecliques Soluções em Internet">
+    <meta name="robots" content="all">
+    <meta property="og:title" content="Heber Campos Oficial">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt-br">
+    <meta property="url" content="https://hebercampos.com.br">
+    <meta property="og:site_name" content="Heber Campos Oficial">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="stylesheet" href="stylesheets/css/main.min.css">
+
     <title>Heber Campos Oficial</title>
 </head>
 
 <body>
-    <header class="header" data-ng-include="'views/layouts/header.html'"></header>
-    <main class="main" data-ng-view></main>
-    <footer class="footer" data-ng-include="'views/layouts/footer.html'">
+    <header class="header" ng-include="'views/layouts/header.html'"></header>
+    <main class="main" ng-view></main>
+    ailsdjaslddjlkadjaslkdjasdlkadjlk
+    <footer class="footer" ng-include="'views/layouts/footer.html'">
         <!-- Scripts -->
-        <script src="scripts/libAll.min.js"></script>
-        <script src="scripts/appAll.min.js"></script>
-        <script type="text/javascript" async defer></script>
+        <script src="./scripts/libAll.min.js"></script>
+        <script src="./scripts/appAll.min.js"></script>
+
+        <script type="text/javascript" async defer>
+            $('document').ready(function() {
+                var footer = document.getElementsByTagName("footer")[0];
+                var popperJs = document.createElement("script");
+                popperJs.type = "text/javascript";
+                popperJs.src = "scripts/js/popper.min.js";
+                footer.insertAdjacentElement('afterend', popperJs);
+                var bootstrapScript = document.createElement('script');
+                bootstrapScript.type = "text/javascript";
+                bootstrapScript.src = "scripts/js/bootstrap.min.js";
+                bootstrapScript.async = true;
+                bootstrapScript.defer = true;
+                footer.insertAdjacentElement('afterend', bootstrapScript);
+            });
+            /*var dropdownScript = document.createElement('script');
+            dropdownScript.type = "text/javascript";
+            dropdownScript.src = "scripts/js/dropdown.js";
+            dropdownScript.async = true;
+            dropdownScript.defer = true;
+            footer.insertAdjacentElement('afterend', dropdownScript);
+            var collapseScript = document.createElement('script');
+            collapseScript.type = "text/javascript";
+            collapseScript.src = "scripts/js/collapse.js";
+            collapseScript.async = true;
+            collapseScript.defer = true;
+            footer.insertAdjacentElement('afterend', collapseScript);*/
+        </script>
     </footer>
 </body>
 
