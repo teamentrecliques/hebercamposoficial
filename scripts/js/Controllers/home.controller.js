@@ -1,3 +1,3 @@
-angular.module('hebercampos').controller('homeController', function($scope) {
-    console.log("olá!");
+angular.module('hebercampos').controller('homeController', function($scope, about) {
+    $scope.about = about;
 });
