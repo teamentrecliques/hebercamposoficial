@@ -1,14 +1,11 @@
 #about {
     background-color: #000000;
     padding: 0 0 2em 0;
-    @media screen and(min-width: 960px) {
-        padding: 0;
-    }
     .container {
         width: 100%;
         margin: 0;
         padding: 0;
-        @media screen and(min-width: 960px) {
+        @media screen and(min-width: 1025px) {
             align-items: center;
             display: flex;
             flex-direction: row;
@@ -16,7 +13,7 @@
         }
         .about-image {
             max-width: 50em;
-            @media screen and(max-width: 960px) {
+            @media screen and(max-width: 1024px) {
                 margin-bottom: 3em;
                 max-width: 100%;
             }
@@ -29,7 +26,7 @@
             line-height: 1.8;
             padding: 0 1.25em;
             text-align: justify;
-            @media screen and(min-width: 960px) {
+            @media screen and(min-width: 1025px) {
                 padding: 0 3em;
             }
         }
