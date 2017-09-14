@@ -36,31 +36,21 @@
         <script src="./scripts/appAll.min.js"></script>
 
         <script type="text/javascript" async defer>
+            var footer = document.getElementsByTagName("footer")[0];
+
+            var popperJs = document.createElement("script");
+            popperJs.type = "text/javascript";
+            popperJs.src = "scripts/js/popper.min.js";
+
+            var bootstrapScript = document.createElement('script');
+            bootstrapScript.type = "text/javascript";
+            bootstrapScript.src = "scripts/js/bootstrap.min.js";
+            bootstrapScript.async = true;
+            bootstrapScript.defer = true;
             $('document').ready(function() {
-                var footer = document.getElementsByTagName("footer")[0];
-                var popperJs = document.createElement("script");
-                popperJs.type = "text/javascript";
-                popperJs.src = "scripts/js/popper.min.js";
                 footer.insertAdjacentElement('afterend', popperJs);
-                var bootstrapScript = document.createElement('script');
-                bootstrapScript.type = "text/javascript";
-                bootstrapScript.src = "scripts/js/bootstrap.min.js";
-                bootstrapScript.async = true;
-                bootstrapScript.defer = true;
                 footer.insertAdjacentElement('afterend', bootstrapScript);
             });
-            /*var dropdownScript = document.createElement('script');
-            dropdownScript.type = "text/javascript";
-            dropdownScript.src = "scripts/js/dropdown.js";
-            dropdownScript.async = true;
-            dropdownScript.defer = true;
-            footer.insertAdjacentElement('afterend', dropdownScript);
-            var collapseScript = document.createElement('script');
-            collapseScript.type = "text/javascript";
-            collapseScript.src = "scripts/js/collapse.js";
-            collapseScript.async = true;
-            collapseScript.defer = true;
-            footer.insertAdjacentElement('afterend', collapseScript);*/
         </script>
     </footer>
 </body>
