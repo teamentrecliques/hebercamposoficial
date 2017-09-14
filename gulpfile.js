@@ -88,7 +88,7 @@ gulp.task('uglifyApp', ['cleanAppJs'], function() {
     return gulp.src(appScripts)
         .pipe(concat('appAll.min.js'))
         //.pipe(uglify({ mangle: false }))
-        //.pipe(minify({ ext: '.js', mangle: false }))
+        .pipe(minify({ ext: '.js', mangle: false }))
         .pipe(gulp.dest('scripts/'));
 });
 
