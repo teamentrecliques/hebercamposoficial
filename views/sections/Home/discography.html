@@ -1,3 +1,15 @@
 <section class="section discography-section" id="discography">
-    <div class="container"></div>
+    <div class="container title-container">
+        <h2 class="section-title">Discografia</h2>
+    </div>
+    <div class="container buttons-container">
+        <button ng-class="{ active: !seeSingles }" class="btn-discs" ng-click="toggleContainers(false)">Discos</button>
+        <button ng-class="{ active: seeSingles }" class="btn-singles" ng-click="toggleContainers(true)">Singles</button>
+    </div>
+    <div class="container content-container item-container">
+        <div class="item-box" ng-repeat="item in data">
+            <img ng-src="{{item.cover}}" ng-alt="{{item.title}}" class="item-cover">
+            <p class="item-title">{{item.title}}</p>
+        </div>
+    </div>
 </section>
